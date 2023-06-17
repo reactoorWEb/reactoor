@@ -1,6 +1,7 @@
 {
-    "name": "reactoor/reactoor",
+    "name": "reactoorWeb/reactoor",
     "description": "An extensible and dynamic web programming framework",
+    "homepage": "https://reactoor.ir",
     "type": "project",
     "keywords": ["framework", "reactoor"],
     "license": "MIT",
