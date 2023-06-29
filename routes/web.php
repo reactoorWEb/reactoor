@@ -1,16 +1,12 @@
 <?php
 
-
 use illustrate\Facades\Route;
 
 
-Route::get('/hello', function (){
-	return 'Hello:)';
+
+Route::get('/' , function (){
+	return 'Hello';
 });
-Route::get('/', function (){
-	return view('home');
+Route::get('/hello/{name}', function (\illustrate\Request $request,$name){
+	return 'Hello ' . $request->getRouteParam('name' , 'arshia') ?? $name;
 });
-Route::get('/login', function (){
-	return view('login');
-});
-Route::post('/login', [\App\Controllers\LoginController::class , 'index']);

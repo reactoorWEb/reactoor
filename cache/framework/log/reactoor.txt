@@ -1,6 +1,2 @@
-[Thu Jun 29 19:23:04 2023] 127.0.0.1:16514 Accepted
-[Thu Jun 29 19:23:04 2023] 127.0.0.1:16515 Accepted
-[Thu Jun 29 19:23:04 2023] 127.0.0.1:16514 [200]: GET /assets/fonts/bold.otf
-[Thu Jun 29 19:23:04 2023] 127.0.0.1:16514 Closing
-[Thu Jun 29 19:23:04 2023] 127.0.0.1:16515 [200]: GET /assets/fonts/LineIcons.woff2
-[Thu Jun 29 19:23:04 2023] 127.0.0.1:16515 Closing
+[Thu Jun 29 19:35:37 2023] 127.0.0.1:16944 [200]: GET /hello/s
+[Thu Jun 29 19:35:37 2023] 127.0.0.1:16944 Closing
