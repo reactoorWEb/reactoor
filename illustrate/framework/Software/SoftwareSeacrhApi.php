@@ -45,9 +45,9 @@ class SoftwareSeacrhApi extends Command
 				sleep(1);
 				$io->newLine(3);
 				$io->writeln('Your template list is ready, you can check the cache file manually or check the templates with the <fg=blue>software:list</> command.Cache:[<fg=yellow>'.realpath(Helpers::config('storage', 'software').'cache.json').'</>]');
-				$file = fopen(Helpers::config('storage', 'software').'cache.json', 'w+');
-				fwrite($file,$json_data_api);
-				fclose($file);
+				Helpers::config('storage', 'software').'cache.json'
+				file_put_contents(Helpers::config('storage', 'software').'cache.json',$json_data_api);
+
 			}else{
 				$io->newLine(2);
 				$io->writeln('<fg=green>GoodBye :)');
