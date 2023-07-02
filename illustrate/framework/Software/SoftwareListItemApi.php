@@ -44,9 +44,8 @@ class SoftwareListItemApi extends Command
 				sleep(1);
 				$io->newLine(3);
 				$io->writeln('The list of all formats has been received, you can use the command <fg=blue>software:output</> Get a list of templates as definable output.Cache File:[<fg=yellow>' .realpath(Helpers::config('storage', 'software').'cache.json').'</>]');
-				$file = fopen(Helpers::config('storage', 'software').'cache.json', 'w+');
-				fwrite($file,$json_data_api);
-				fclose($file);
+				file_put_contents(Helpers::config('storage', 'software').'cache.json',$json_data_api);
+
 			}else{
 				$io->newLine(2);
 				$io->writeln('<fg=green>GoodBye :)');
@@ -67,9 +66,8 @@ class SoftwareListItemApi extends Command
 				usleep(1000);
 			}
 			$progressBar->finish();
-			$file = fopen(Helpers::config('storage', 'software').'cache.json', 'w+');
-			fwrite($file,$json_data_api);
-			fclose($file);
+			file_put_contents(Helpers::config('storage', 'software').'cache.json',$json_data_api);
+
 			sleep(1);
 			$io->newLine(3);
 			$io->writeln('The list of all formats has been received, you can use the command <fg=blue>software:output</> Get a list of templates as definable output.Cache File:[<fg=yellow>' .realpath(Helpers::config('storage', 'software').'cache.json').'</>]');
