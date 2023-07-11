@@ -17,6 +17,9 @@ return [
 		'ATTR_DEFAULT_FETCH_MODE' => PDO::ATTR_DEFAULT_FETCH_MODE,
 		'ATTR_STRINGIFY_FETCHES' => false,
 	],
-	'userClass' => 'help',
-	'migrations' => __DIR__.'/../database/migrations/'
+	'userClass' => \App\Models\User::class,
+	'migrations' => __DIR__.'/../database/migrations/',
+	'factories-paths' => [
+		__DIR__.'/../database/factories/',
+	],
 ];
